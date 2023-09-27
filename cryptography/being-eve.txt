@@ -1,0 +1,114 @@
+Thea Traw
+
+=======Diffie-Hellman=======
+
+Given:  Alice and Bob agree on g = 7 and p = 61. Alice sends A = (g ** a) % p = 30 and Bob sends B = (g ** b) % p = 17.
+
+Their shared secret K is 6.
+
+First, Eve needs to find a or b. There is no need to find both values because (A ** b) % p = K = (B ** a) % p. So with the information Eve has overheard, just cracking either Bob's or Alice's private secret would be sufficient to figure out their shared secret. The following function runs through all possible values that (for instance) a could be by checking whether (g ** a) % p = A, for all a < p (because otherwise a would map to some smaller value when taken mod p). (And, of course, it could find b by finding what satisfies (g ** b) % p = B.)
+
+def factor(g, p, x):
+    i = 0
+    while (i < p):
+        if ( ((g ** i) % p) == x):
+            return i
+        i = i + 1
+    return -1
+
+This is the part that would fail if the integers involved were much larger. This brute force method would have to check far, far too many values to find the solution to be usable. (And there is no (known) other efficient way to try, either.) The sheer amount of time that it would take to do so is what makes Diffie-Hellman secure from this kind of attack.
+
+This next function calculates the shared secret K given the public information by making use of the function above. I wanted to know what both a and b were, so that's included here, but as I mentioned above, that's not necessary to find K. But anyhow, since K = (A ** b) % p = (B ** a) % p = (g ** (a*b)) % p, we can use the latter to find the shared secret.
+
+def findK(g, p, x1, x2):
+    a = factor(7, 61, x1)
+    b = factor(7, 61, x2)
+
+    if (a == -1) or (b == -1): #something went wrong in factoring
+        return -1
+        
+    K = (g ** (a*b)) % p
+
+    print("a = "+str(a)+", b = "+str(b)+", K = "+str(K)) 
+
+    return K
+
+findK(7, 61, 30, 17)
+
+
+=======RSA=======
+
+Given:  Bob's public key is (e=17, n=170171). Alice sends an array of encrypted data to Bob.
+
+First, Eve needs to find p and q. This is necessary in order for her to generate Bob's private key on her own. So she has to factor n = pq. The following function does this factoring in a brute force way, by trying every possible factor sequentially until p is found (where p is arbitrarily designated the smaller of the two factors.) Then, once p is found, q is by default found as well.
+
+def findPQ(n):
+    i = 2
+    while (i < ((n*0.5) + 1)):
+        if ((n % i) == 0):
+            return (i, (n // i))
+        i = i + 1
+    return -1
+
+#print(findPQ(170171))
+
+This is the part that would fail if the integers involved were much larger. There would be just too many possible values to check to find the factors in any usable way. There is no (again: known) efficient way to factor such big numbers. Of course, there are definitely more efficient ways to try than this very straight-forward brute force method I have implemented (for instance, only use primes as possible factors...and there are more sophisticated candidate selection methods, I'm sure), but even those are nowhere near good enough. The sheer amount of time it takes to find the factors of n is what makes RSA secure.
+
+Next, having acquired p and q, Eve can calculate Bob's private key. And while the following function is a brute force method to find d, any reasonable attacker  would have an implementation of RSA at hand--and would just use the "generating d" component (which makes use of the extended Euclidian algorithm to far more efficient ends), as Eve now has all the information she would have if she were making her own public-private key pair from scratch:  p, q, e.
+
+def findD(e, n):
+    (p,q) = findPQ(n)
+
+    i = 0
+    while (i < (p - 1)*(q - 1)):
+        if ((e*i) % ((p - 1)*(q - 1)) == 1):
+            return i
+        i = i + 1
+    return -1
+
+#print(findD(17, 170171))
+
+And now that Eve has both Bob's public and private keys, she can decrypt Alice's secret message. Alice had encoded her messages using Bob's public key (thinking that would ensure only Bob could read them, as only he would have his private key). For each plaintext message block M_i, Alice encrypted her corresponding ciphertext C_i as follows:  C_i = (M_i ** e) % n.
+
+In order to decrypt each C_i in Alice's message, Eve need only use her "copy" of Bob's private key as follows:  M_i = (C_i ** d) % n. This is because M_i = (M_i ** (e*d)) % n.
+
+Each message block M_i in Alice's message is a two-byte block that represents two ASCII characters. So, for each M_i decrypted from each C_i, the first ASCII character in the pair is represented by the first 8 bits, while the second ASCII character is the last 8 bits. So either by shifting right or masking, respectively, both characters can be acquired.
+
+The function below decrypts each of Alice's message blocks, separates the blocks into two ASCII characters, and then prints those characters as plaintext.
+
+def decrypt(e, n, messages):
+    d = findD(e, n)
+    for M in messages:
+        P = (M ** d) % n
+
+        char1 = P >> 8
+        char2 = P & 0xff
+
+        print(chr(char1), end = "")
+        print(chr(char2), end = "")
+    print()
+
+messages = [65426, 79042, 53889, 42039, 49636, 66493, 41225, 58964,
+126715, 67136, 146654, 30668, 159166, 75253, 123703, 138090,
+118085, 120912, 117757, 145306, 10450, 135932, 152073, 141695,
+42039, 137851, 44057, 16497, 100682, 12397, 92727, 127363,
+146760, 5303, 98195, 26070, 110936, 115638, 105827, 152109,
+79912, 74036, 26139, 64501, 71977, 128923, 106333, 126715,
+111017, 165562, 157545, 149327, 60143, 117253, 21997, 135322,
+19408, 36348, 103851, 139973, 35671, 93761, 11423, 41336,
+36348, 41336, 156366, 140818, 156366, 93166, 128570, 19681,
+26139, 39292, 114290, 19681, 149668, 70117, 163780, 73933,
+154421, 156366, 126548, 87726, 41418, 87726, 3486, 151413,
+26421, 99611, 157545, 101582, 100345, 60758, 92790, 13012,
+100704, 107995]
+        
+decrypt(17, 170171, messages)
+
+
+Alice's message to Bob:
+
+Hi Bob. I'm walking from now on. Your pal, Alice. https://foundation.mozilla.org/en/privacynotincluded/articles/its-official-cars-are-the-worst-product-category-we-have-ever-reviewed-for-privacy/
+
+
+Finally, unfortunately for Alice, her message to Bob would be insecure even if Bob's keys involved larger integers. This is because she used the CBC block cipher model, where each message block is encrypted separately. Thus, any repeated plaintext results directly in repeated ciphertext, which is vulnerable to frequency analysis attacks. 
+
