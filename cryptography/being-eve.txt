@@ -110,5 +110,5 @@ Alice's message to Bob:
 Hi Bob. I'm walking from now on. Your pal, Alice. https://foundation.mozilla.org/en/privacynotincluded/articles/its-official-cars-are-the-worst-product-category-we-have-ever-reviewed-for-privacy/
 
 
-Finally, unfortunately for Alice, her message to Bob would be insecure even if Bob's keys involved larger integers. This is because she used the CBC block cipher model, where each message block is encrypted separately. Thus, any repeated plaintext results directly in repeated ciphertext, which is vulnerable to frequency analysis attacks. 
+Finally, unfortunately for Alice, her message to Bob would be insecure even if Bob's keys involved larger integers. This is because she used the ECB block cipher model, where each message block is encrypted separately. Thus, any repeated plaintext results directly in repeated ciphertext, which is vulnerable to frequency analysis attacks. 
 
