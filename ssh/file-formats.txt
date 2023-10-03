@@ -54,7 +54,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZXcFTQ1/u/ww01aghuD1DdTXMYS1f435U25gsfIPc
 
 1)
 
-Since the generated key is in PEM format, there is a plain-text header and footer to indicate where the key itself starts and stops. The content between (in base64) should have the following items, in this exact order.
+Since the generated key is in PEM format, there is a plain-text header and footer to indicate where the key itself starts and stops. The content between (in base64) should have the following items, in this exact order (from RFC 8017 A.1.2).
 
 RSAPrivateKey ::= SEQUENCE {
              version           Version,
