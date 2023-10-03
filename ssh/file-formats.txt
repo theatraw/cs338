@@ -104,9 +104,9 @@ d = 0x008f47248abccb7c9f33ad93f42a9de60c1433ad0f9538329d7053fb5fbf87af7585acb88e
 Starting index/offset = 401
 DER encoding = 02 82 01 81 [...content bytes]
 
-Again, we see 0x02 as the first byte, meaning integer. Then, 0x82 is next, which like above, indicates that this form is long, definite, meaning that the following 2 octets are required to store the length of the integer.
+Again, we see 0x02 as the first byte, meaning integer. Then, 0x82 is next, which like above, indicates that this form is long, definite, meaning that the following 2 octets are required to store the length value of the integer.
 
-So we can then see that the length of the d is 0x0181 = 385 bytes. (Which also is confirmed by the ASN.1 decoder as the length of this integer.)
+So we can then see that the length of d is 0x0181 = 385 bytes. (Which also is confirmed by the ASN.1 decoder as the length of this integer.)
 
 Integer 4:  prime1
 
@@ -115,7 +115,7 @@ p = 0x00f668d24978d026217de32874b8927f14e1f8a18115c4d8cd61f70e845bca168e4ccf31bb
 Starting index/offset = 790
 DER encoding = 02 81 C1 [...content bytes]
 
-Once again, we begin with 0x02, which means integer. And then we have 0x81, which tells us how many octets are needed to represent the length of the integer. We break 0b10000001 into 1 0000001. The first bit says that the form is long, definite, which means that we are counting the number of octets needed to convey the length of the integer, rather than the length directly. And so the next seven bits mean that length = 1, and so we will look at the following byte to know the length of the integer.
+Once again, we begin with 0x02, which means integer. And then we have 0x81, which tells us how many octets are needed to represent the length value of the integer. We break 0b10000001 into 1 0000001. The first bit says that the form is long, definite, which means that we are counting the number of octets needed to convey the length of the integer, rather than the length directly. And so the next seven bits mean that length = 1, and so we will look at the following byte to know the length of the integer.
 
 So now we see that the length of p is 0xC1 = 193 bytes. (Which we confirm that is the length of the integer on the ASN.1 decoder.)
 
@@ -198,7 +198,7 @@ e = 65537
 Starting index/offset = 393
 DER encoding = 02 03 [...content bytes]
 
-We have also seen this DER encoing before (as the e in the private key absolutely should be the same e as the public key), and so to recap:  the 0x02 means integer, and the 0x03 means that the form is short, definite, and that the length value of the integer is 3 bytes. 
+We have also seen this DER encoding before (as the e in the private key absolutely should be the same e as the public key), and so to recap:  the 0x02 means integer, and the 0x03 means that the form is short, definite, and that the length of the integer is 3 bytes. 
 
 
 =====SANITY CHECK=====
@@ -207,7 +207,7 @@ To start off, there were some handy sanity checks already build into decoding th
 
 The private key contains (among others) the following integers:  n, e, d, p, q. The public key contains:  n and e. So, n should equal n and e should equal e, and they do.
 
-Now, for some more specific checks:
+Now, for some more relationship-specific checks:
 
 1. n = pq? Yes.
 
