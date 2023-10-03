@@ -1,0 +1,222 @@
+Thea Traw
+
+Contents of key files:
+
+id_rsa_homework
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIG5AIBAAKCAYEA2V3BU0Nf7v8MNNWoIbg9Q3U1zGEtX+N+VNuYLHyD3FsgOLCq
+NCO6XRwOBxibQUoyjLEYYZ80/fR7l06F6ENN9+3feEVb/N5DLw7OE8k1o9yO3N44
+qyQ8WweVMZ1+K+VPdC86CL5fLIhONNbImzU5lQpQiNHjZjAhY9MtM3jSpHIiT5Fm
+GaQTtI+UD2gnWvIfuPdDQ2pjiFLF9Ivf/0H/YnQoHK27XFkNjEFxsQ1AYICrIsRT
+8zP9U769Mt3iXkmU7OlZ5UpsmrygibYz+A4FmzhpCyq/IRuxEIKYshruD5CpiArl
+6b1IUg4yTfu2xQW5ss6jA4vsOQ4hoda1dhwLECsgNw/aOJnsKk05oe0X1/CBCQFz
+PC3Ju1XWYi70gM0WMqj7BHEQKF2Tsr14xKGsLHav9rWv9dBxo240g7zthcNiPytR
+jodeJSop2cLRpZgNXzn/LwsLhQwOXD8gMOtP9itEWUJ33yRplpQpGScobOw92BeD
+YsK/Ra4P1cSxbJM9AgMBAAECggGBAI9HJIq8y3yfM62T9Cqd5gwUM60PlTgynXBT
++1+/h691hay4jsilkE+VkY2N47DKtr1UcszOg8CuKdVXlh6+VqOJcZc2qObqnwBi
+0uXp6Gillqnx9QqibQJX4jj9JlDK62+bPbbLvbJ9+ocL2Nmt4NHkJae6KhmOukOx
+zIa0Kqzo6sLmBZX7OF35klABiIeDN/PVUMocU5VlckS6+qCoIS4FgPc+cVTzAmIk
+NUvOf1PdHHFjVi7mYyKThOUFqxQZjVDAoIBgbJfTXLYpGw9/RMZqwWByMXQWFc8G
+2KG0wtlEBW2+At/6qhpLGhe5Voz95CV7btPz/MUI0X73wAa2lA4/anXWd/Nwgddq
+j75znjawfKclibqOiLj9ewcwNn1146IiL/dipnRuvS3y+2NYMo+SKiuONq3MIHxU
+vTOI0VObBWkF0jQki3oko7zwdEB8dHWzCYRAjJmDdUb1X9xpF7kCuj04ReTdDxOb
+oIIOGJNeAgl4WDb+UaIGE5Ue5LA1YQKBwQD2aNJJeNAmIX3jKHS4kn8U4fihgRXE
+2M1h9w6EW8oWjkzPMbvu5nefmtyG39uvZmmye16j1tQXmDgoAMdqklPu6DugdR56
+/6eDmMPNL67wxGBZtSdksCdG+LUXGowmU0680eCIwOck4YFwq6uoMUeIIgNmyITq
+tmGRsyGWI9TrgcgSAHimpty7e5RnmZzdEYE4PA27K4ijTaVS7NORa7eq0fXfoduY
+9p94TkooiLrsrwUrD6j1m95kKRACm2SkdhUCgcEA4dONZ4KHLGu/U6GiNOoWIIHI
+l2QK8vtJDu25jGIv2rK8SYNDFSvdl6nbxeQz19QhdKyVNwUoMjXIbvc/CKkEp9z0
+WyYObXMsGZdTqUgrp8Po7z03FQsQeYe1bdWrmTBg3LxMnT/r6NP8nK2W6M1BTmF5
+1LI1Vj1Qs733+AWY4zEy5ZE7BJQRRplW7Cvpy5XNLZc1KYAn5gozMJJljKFOtzln
+sl3MoUfPrEZnTO52HuBbisILy13/vGT7rm3DzlqJAoHBAJJqirm5ngVqVUFLYr/h
+3L1t4K0m5OaI5NFXWjrvx89LUvyy0rcMHvypqmxCTGmW8yto/z1fg7tZadTrUZNT
+y6fkOroHncr8am9ZsM8VjF/ocFAdwoCj41LaqdBGqAyF5/1uwHrCFRbnIGDwwRk5
+3wVXIKpMcB5/rM5EoKp0NCqUfWuk+Awejn6g2fgNYRZDNoNRu98B6TkQBDKYIscA
+OKy6Ad2WccQcl3mHG62mQVwuS2Xg8kavDaB6fdbuuwi2WQKBwB1+9ElA00cKC8Nw
+qS8gJCO6z+h2OLfj+nbotgOQD5ARKGaxrmFliVv1467FT8AxBO2oXRUCp21nePaF
+dMY8zU7fnUsKfXfuQyRUj6jctFcFT7dv13H4L/6vqxLdhbxMhVpPffJMFxQiHCya
+v8tIg+8o7DDL1gudlpzjgy/yCzYhhvRVM9A1Rsxh2uieE7tzpYj+5wK0qoFxc540
+gO8NYqqr5M93UPL/3jAyQevaebMuusY08jVt4alJx1XRIHIjgQKBwEYHR9NkKjOP
+lC5ahSbBS442dFfveFVD759YSYpQqv4nKE0HW9IBJXwkjh8QoHvnjXLfzey1SDOE
+21LIVzI2ChN8/0M8qbwhBCk7NSTG8DGNqsQJg2AZJOhH+i8+ubAtzWzg7Iz5I2cl
+5UmOtGblYX/e9CeCGJRhGqy26UjF5hEJconHtdLPz1Hlsbp4rF9Trx8UjTUyhTAz
+0GslfWAqCYtfDUN4eZ8cz/PtbS+uzO35gSoPainvQ0Q5nqy/3aPZPg==
+-----END RSA PRIVATE KEY-----
+
+
+id_rsa_homework.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDZXcFTQ1/u/ww01aghuD1DdTXMYS1f435U25gsfIPcWyA4sKo0I7pdHA4HGJtBSjKMsRhhnzT99HuXToXoQ0337d94RVv83kMvDs4TyTWj3I7c3jirJDxbB5UxnX4r5U90LzoIvl8siE401sibNTmVClCI0eNmMCFj0y0zeNKkciJPkWYZpBO0j5QPaCda8h+490NDamOIUsX0i9//Qf9idCgcrbtcWQ2MQXGxDUBggKsixFPzM/1Tvr0y3eJeSZTs6VnlSmyavKCJtjP4DgWbOGkLKr8hG7EQgpiyGu4PkKmICuXpvUhSDjJN+7bFBbmyzqMDi+w5DiGh1rV2HAsQKyA3D9o4mewqTTmh7RfX8IEJAXM8Lcm7VdZiLvSAzRYyqPsEcRAoXZOyvXjEoawsdq/2ta/10HGjbjSDvO2Fw2I/K1GOh14lKinZwtGlmA1fOf8vCwuFDA5cPyAw60/2K0RZQnffJGmWlCkZJyhs7D3YF4Niwr9Frg/VxLFskz0= theat@Theas-MacBook-Pro-2.local
+
+
+=====PRIVATE KEY=====
+
+1)
+
+Since the generated key is in PEM format, there is a plain-text header and footer to indicate where the key itself starts and stops. The content between (in base64) should have the following items, in this exact order.
+
+RSAPrivateKey ::= SEQUENCE {
+             version           Version,
+             modulus           INTEGER,  -- n
+             publicExponent    INTEGER,  -- e
+             privateExponent   INTEGER,  -- d
+             prime1            INTEGER,  -- p
+             prime2            INTEGER,  -- q
+             exponent1         INTEGER,  -- d mod (p-1)
+             exponent2         INTEGER,  -- d mod (q-1)
+             coefficient       INTEGER,  -- (inverse of q) mod p
+             otherPrimeInfos   OtherPrimeInfos OPTIONAL
+         }
+
+2) I used Lapo Luchini's ASN.1 decoder on my private key. The decoder was able to handle the header and footer, and so I did not need to strip those off. Then I just copied the contents of id_rsa_homework into the text box and let the decoder do its thing. I also used Michael Holtstrum's decoder (to make it easier to copy and paste the specific integer values over into this report)--and that did need the header and footer to be stripped.
+
+3) As per the items listed in 1), there are several specific integers in this decoded key file.
+
+Integer 1:  modulus
+
+n = 0x00d95dc153435feeff0c34d5a821b83d437535cc612d5fe37e54db982c7c83dc5b2038b0aa3423ba5d1c0e07189b414a328cb118619f34fdf47b974e85e8434df7eddf78455bfcde432f0ece13c935a3dc8edcde38ab243c5b0795319d7e2be54f742f3a08be5f2c884e34d6c89b3539950a5088d1e366302163d32d3378d2a472224f916619a413b48f940f68275af21fb8f743436a638852c5f48bdfff41ff6274281cadbb5c590d8c4171b10d406080ab22c453f333fd53bebd32dde25e4994ece959e54a6c9abca089b633f80e059b38690b2abf211bb1108298b21aee0f90a9880ae5e9bd48520e324dfbb6c505b9b2cea3038bec390e21a1d6b5761c0b102b20370fda3899ec2a4d39a1ed17d7f0810901733c2dc9bb55d6622ef480cd1632a8fb047110285d93b2bd78c4a1ac2c76aff6b5aff5d071a36e3483bced85c3623f2b518e875e252a29d9c2d1a5980d5f39ff2f0b0b850c0e5c3f2030eb4ff62b44594277df24699694291927286cec3dd8178362c2bf45ae0fd5c4b16c933d
+
+Starting index/offset = 7
+DER encoding bytes = 02 82 01 81
+
+Here, the 0x02 contains information on the class, P/C, and type. We break 0b00000010 into 00 0 00010, where the first two bits mean the class = 0 = universal. The next bit means P/C = 0 = primitive. And the last five bits mean type = 2 = integer.
+
+Then the 0x82 contains information on how many octets the length value of the integer takes up. We split 0b10000010 into 1 0000010, where the first bit means form = 1 = long (and definite since the type is primitive), which means that the number of octets to represent the integer's length value is between 1-126. So it follows that the 0000010 means length = 2 octets required to store the value of the number of bytes in the integer.
+
+So, the length of the integer is then 0x0181 = 385 bytes. (Which is confirmed by the ASN.1 decoder tool as how many bytes n has--which are directly after the DER encoding.)
+
+Integer 2:  publicExponent
+
+e = 65537
+
+Starting index/offset = 396
+DER encoding = 02 03
+
+As described above, the 0x02 indicates that this item is an integer (and class = universal and P/C = primitive).
+
+Then, the 0x03 contains information about the length of the integer. We break 0b00000011 into 0 0000011. The first bit means that form = 0 = definite, short (so the following 7 bits will describe the value of the length). So 0000011 means that there are 3 following content bytes. And those 3 bytes are the hexidecimal representation of e = 65537.
+
+Integer 3:  privateExponent
+
+d = 0x008f47248abccb7c9f33ad93f42a9de60c1433ad0f9538329d7053fb5fbf87af7585acb88ec8a5904f95918d8de3b0cab6bd5472ccce83c0ae29d557961ebe56a389719736a8e6ea9f0062d2e5e9e868a596a9f1f50aa26d0257e238fd2650caeb6f9b3db6cbbdb27dfa870bd8d9ade0d1e425a7ba2a198eba43b1cc86b42aace8eac2e60595fb385df992500188878337f3d550ca1c5395657244bafaa0a8212e0580f73e7154f3026224354bce7f53dd1c7163562ee663229384e505ab14198d50c0a080606c97d35cb6291b0f7f44c66ac1607231741615cf06d8a1b4c2d944056dbe02dffaaa1a4b1a17b9568cfde4257b6ed3f3fcc508d17ef7c006b6940e3f6a75d677f37081d76a8fbe739e36b07ca72589ba8e88b8fd7b0730367d75e3a2222ff762a6746ebd2df2fb6358328f922a2b8e36adcc207c54bd3388d1539b056905d234248b7a24a3bcf074407c7475b30984408c99837546f55fdc6917b902ba3d3845e4dd0f139ba0820e18935e0209785836fe51a20613951ee4b03561
+
+Starting index/offset = 401
+DER encoding = 02 82 01 81
+
+Again, we see 0x02 as the first byte, meaning integer. Then, 0x82 is next, which like above, indicates that this form is long, definite, meaning that the following 2 octets are required to store the length of the integer.
+
+So we can then see that the length of the d is 0x0181 = 385 bytes. (Which also is confirmed by the ASN.1 decoder as the length of this integer.)
+
+Integer 4:  prime1
+
+p = 0x00f668d24978d026217de32874b8927f14e1f8a18115c4d8cd61f70e845bca168e4ccf31bbeee6779f9adc86dfdbaf6669b27b5ea3d6d41798382800c76a9253eee83ba0751e7affa78398c3cd2faef0c46059b52764b02746f8b5171a8c26534ebcd1e088c0e724e18170ababa8314788220366c884eab66191b3219623d4eb81c8120078a6a6dcbb7b9467999cdd1181383c0dbb2b88a34da552ecd3916bb7aad1f5dfa1db98f69f784e4a2888baecaf052b0fa8f59bde642910029b64a47615
+
+Starting index/offset = 790
+DER encoding = 02 81 C1
+
+Once again, we begin with 0x02, which means integer. And then we have 0x81, which tells us how many octets are needed to represent the length of the integer. We break 0b10000001 into 1 0000001. The first bit says that the form is long, definite, which means that we are counting the number of octets needed to convey the length of the integer, rather than the length directly. And so the next seven bits mean that length = 1, and so we will look at the following byte to know the length of the integer.
+
+So now we see that the length of p is 0xC1 = 193 bytes. (Which we confirm that is the length of the integer on the ASN.1 decoder.)
+
+Integer 5:  prime2
+
+q = 0x00e1d38d6782872c6bbf53a1a234ea162081c897640af2fb490eedb98c622fdab2bc498343152bdd97a9dbc5e433d7d42174ac953705283235c86ef73f08a904a7dcf45b260e6d732c199753a9482ba7c3e8ef3d37150b107987b56dd5ab993060dcbc4c9d3febe8d3fc9cad96e8cd414e6179d4b235563d50b3bdf7f80598e33132e5913b049411469956ec2be9cb95cd2d9735298027e60a333092658ca14eb73967b25dcca147cfac46674cee761ee05b8ac20bcb5dffbc64fbae6dc3ce5a89
+
+Starting index/offset = 986
+DER encoding = 02 81 C1
+
+This DER encoding is identical to the one above. And so we know that 0x02 means integer, 81 means that it needs one octet to store the length value of the integer, and that the length of q is 193 bytes.
+
+Integer 6:  exponent1
+
+d mod (p - 1) = 0x00926a8ab9b99e056a55414b62bfe1dcbd6de0ad26e4e688e4d1575a3aefc7cf4b52fcb2d2b70c1efca9aa6c424c6996f32b68ff3d5f83bb5969d4eb519353cba7e43aba079dcafc6a6f59b0cf158c5fe870501dc280a3e352daa9d046a80c85e7fd6ec07ac21516e72060f0c11939df055720aa4c701e7facce44a0aa74342a947d6ba4f80c1e8e7ea0d9f80d611643368351bbdf01e9391004329822c70038acba01dd9671c41c9779871bada6415c2e4b65e0f246af0da07a7dd6eebb08b659
+
+Starting index/offset = 1182
+DER encoding = 02 81 C1
+
+Again, here is the same DER encoding as above. So:  the item is an integer, in long, definite form, that needs one octet to represent the length value of the integer, and said length is 193 bytes.
+
+
+Integer 7:  exponent2
+
+d mod (q - 1) = 0x1d7ef44940d3470a0bc370a92f202423bacfe87638b7e3fa76e8b603900f90112866b1ae6165895bf5e3aec54fc03104eda85d1502a76d6778f68574c63ccd4edf9d4b0a7d77ee4324548fa8dcb457054fb76fd771f82ffeafab12dd85bc4c855a4f7df24c1714221c2c9abfcb4883ef28ec30cbd60b9d969ce3832ff20b362186f45533d03546cc61dae89e13bb73a588fee702b4aa8171739e3480ef0d62aaabe4cf7750f2ffde303241ebda79b32ebac634f2356de1a949c755d120722381
+
+Starting index/offset = 1378
+DER encoding = 02 81 C0
+
+Here, we see that 0x02 means integer. Then 0x81 indicates that the form is long, definite and that 1 byte is required to represent the length value of the integer.
+
+So, since 0xC0 = 192 bytes, that is the length of the integer. (Again confirmed on the ASN.1 decoder.)
+
+Integer 8:  coefficient
+
+(inverse of q) mod p = 0x460747d3642a338f942e5a8526c14b8e367457ef785543ef9f58498a50aafe27284d075bd201257c248e1f10a07be78d72dfcdecb5483384db52c85732360a137cff433ca9bc2104293b3524c6f0318daac40983601924e847fa2f3eb9b02dcd6ce0ec8cf9236725e5498eb466e5617fdef427821894611aacb6e948c5e611097289c7b5d2cfcf51e5b1ba78ac5f53af1f148d3532853033d06b257d602a098b5f0d4378799f1ccff3ed6d2faeccedf9812a0f6a29ef4344399eacbfdda3d93e
+
+Starting index/offset = 1573
+DER encoding = 02 81 C0
+
+And lastly, this DER encoding is the same as above, and so the integer is in long, definite form, requiring one octet to show the length value of the integer, and that the length of the integer is 0xC0 = 192 bytes.
+
+Integer 9:  version
+
+The version is 0, which means that this is the two-prime version (rather than multi-prime).
+
+Starting index/offset = 4.
+DER encoding = 02 01
+
+Technically, this would be Integer 1, but since the RSAPrivateKey definition listed it as a Version rather than an INTEGER, I relegated it to being last. Anyway, this is included because of that signature 0x02 byte than means that the type is integer. For the following 0x01, we can split 0b00000001 into 0 0000001, where 0 means that the form is short, definite. And so the remaining seven bits show that the length value of the integer is 1 byte. (Which it is:  0x00.)
+
+
+=====PUBLIC KEY=====
+
+As per the RFC 8017 documentation (A.1.1), in id_rsa_homework.pub we expect to see:
+
+RSAPublicKey ::= SEQUENCE {
+             modulus           INTEGER,  -- n
+             publicExponent    INTEGER   -- e
+         }
+
+To decode this key, it took a bit more work than the private key. The initial format the public key was in had the header ssh-rsa and the footer of my device (theat@Theas-MacBook-Pro-2.local). When I tried to put that directly into Lapo Luchini's ASN.1 decoder, it gave me errors. I figured this was something to do with the .pub format. I wanted it to be in PEM format. So after some Google research, I found an article (https://clustercs.com/kb/docs/clustercs/server-setup/add-a-server/convert-a-ssh-keygen-public-key-to-a-pem-format/) of how to run that conversion with the following command: ssh-keygen -f server.pub -e -m pem. Now I have the public key in PEM format (with the header and footer bracketing the base64 content). And with the Luchini ASN.1 decoder, I did not need to strip the header and footer.
+
+So, without further ado, here are the integers in the public key.
+
+
+Integer 1:  modulus
+
+n = 0x00d95dc153435feeff0c34d5a821b83d437535cc612d5fe37e54db982c7c83dc5b2038b0aa3423ba5d1c0e07189b414a328cb118619f34fdf47b974e85e8434df7eddf78455bfcde432f0ece13c935a3dc8edcde38ab243c5b0795319d7e2be54f742f3a08be5f2c884e34d6c89b3539950a5088d1e366302163d32d3378d2a472224f916619a413b48f940f68275af21fb8f743436a638852c5f48bdfff41ff6274281cadbb5c590d8c4171b10d406080ab22c453f333fd53bebd32dde25e4994ece959e54a6c9abca089b633f80e059b38690b2abf211bb1108298b21aee0f90a9880ae5e9bd48520e324dfbb6c505b9b2cea3038bec390e21a1d6b5761c0b102b20370fda3899ec2a4d39a1ed17d7f0810901733c2dc9bb55d6622ef480cd1632a8fb047110285d93b2bd78c4a1ac2c76aff6b5aff5d071a36e3483bced85c3623f2b518e875e252a29d9c2d1a5980d5f39ff2f0b0b850c0e5c3f2030eb4ff62b44594277df24699694291927286cec3dd8178362c2bf45ae0fd5c4b16c933d
+
+Starting index/offset = 4
+DER encoding = 02 82 01 81
+
+We've seen this DER encoding above (as we should, given that it is n!), and so just to reiterate:  the 0x02 means that this is an integer, the 0x82 indicates that the form is long, definite, and that the length value of the integer requires two octets to store. Then, the 0x0181 means that the length of the integer is 385 bytes.
+
+Integer 2:  publicExponent
+
+e = 65537
+
+Starting index/offset = 393
+DER encoding = 02 03
+
+We have also seen this DER encoing before (as the e in the private key absolutely should be the same e as the public key), and so to recap:  the 0x02 means integer, and the 0x03 means that the form is short, definite, and that the length value of the integer is 3 bytes. 
+
+
+=====SANITY CHECK=====
+
+To start off, there were some handy sanity checks already build into decoding the private and public keys.
+
+The private key contains (among others) the following integers:  n, e, d, p, q. The public key contains:  n and e. So, n should equal n and e should equal e, and they do.
+
+Now, for some more specific checks:
+
+1. n = pq? Yes.
+
+2. e < (p - 1)(q - 1) and GCD(e, (p - 1)(q - 1)) = 1? Yes.
+
+(I grabbed a Euclidean algorithm function to calculate the gcd from this article (https://www.geeksforgeeks.org/gcd-in-python/) to confirm.)
+
+3. ed = 1 mod (p - 1)(q - 1)? Yes.
+
+
+
+
