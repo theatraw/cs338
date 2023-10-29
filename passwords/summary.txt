@@ -70,16 +70,16 @@ Mapping of hash to password is 32 bytes.
 
 Part 1:
 (267516 passwords * 16 bytes) + (267516 hashes * 32 bytes) + (267516 mappings * 32 bytes)
-267516(16 + 32 + 32) = 21401280
+267516(16 + 32 + 32) = 21401280 bytes
 
 Part 2:
 (267516 passwords * 267516 passwords [total passwords to store] * 16 bytes * 2 [two passwords concatenated together will take twice the memory to store]) + (267516 passwords * 267516 passwords [total] * 32 bytes [hashes are fixed-length]) + (267516 * 267516 [total] mappings * 32 bytes)
-267516^2(16*2 + 32 + 32) = 6.8702 x 10^12
+267516^2(16*2 + 32 + 32) = 6.8702 x 10^12 bytes
 
 Part 3:
 
 (2734 possible salt values [one for each password to crack]) * ((267516 passwords * 16 bytes) + (267516 hashes * 32 bytes) + (267516 mappings * 32 bytes))
-2734(267516(16 + 32 + 32)) = 5.8511 x 10^10
+2734(267516(16 + 32 + 32)) = 5.8511 x 10^10 bytes
 
 [Effectively, for each salt value (as taken from the passwords file), compute Part 1.]
 
