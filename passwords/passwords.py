@@ -138,7 +138,7 @@ def crackPasswordsPart3(passwords_file, words_file):
 
         saltedHashDictionary = createSaltedHashDictionary(words_file, salt)
 
-        f.write(username+": "+saltedHashDictionary[salted_hash]+"\n")
+        f.write(username+":"+saltedHashDictionary[salted_hash]+"\n")
 
     f.close()
 
