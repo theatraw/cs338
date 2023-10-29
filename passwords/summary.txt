@@ -1,0 +1,102 @@
+Thea Traw
+
+Part 1
+Total time: 0m0.265s
+
+real	0m0.296s
+user	0m0.265s
+sys	0m0.026s
+
+Number of hashes computed: 267516 
+Passwords cracked: 2734
+Time per hash computed: 0.265 seconds / 267516 hashes = 9.906 x 10^-7 seconds / hash
+Time per password cracked: 0.265 seconds / 2734 passwords = 9.693 x 10^-5 seconds / password
+Passwords cracked per number of hashes computed: 2734 passwords / 267516 hashes = 0.01022 passwords / hash
+
+Part 2
+Total time: 17m32.217s
+
+real	17m33.655s
+user	17m32.217s
+sys	0m1.403s
+
+Number of hashes computed: 267516*5000 = 1.33758 x 10^9
+(I tried every word as the first word and limited the sample size to only trying the first 5000 words as a second word for each.)
+Passwords cracked: 56
+Time per hash computed: 17m32.217s / 1.33758 x 10^9 hashes = 1052.217 seconds / 1.33758 x 10^9 hashes = 7.867 x 10^-7 seconds / hash
+Time per password cracked: 17m32.217s / 56 passwords = 1052.217 seconds / 56 passwords = 18.789 seconds / password
+Passwords cracked per number of hashes computed: 56 passwords / 1.33758 x 10^9 hashes = 4.187 x 10^-8 passwords / hash
+
+Part 3
+Total time: 10m24.274s
+
+real	10m51.126s
+user	10m24.274s
+sys	0m5.370s
+
+Number of hashes computed: 267516*2734 = 731388744
+(For each password, I calculated the hash of every possible password with the specific salt.)
+Passwords cracked: 2734
+Time per hash computed: 10m23.274s / 731388744 hashes = 623.274 seconds / 731388744 hashes = 8.522 X 10^-7 seconds / hash
+Time per password cracked: 10m23.274s / 2734 passwords = 623.274 seconds / 2734 passwords = 0.2280 seconds / password
+Passwords cracked per number of hashes computed: 2734 passwords / 731388744 hashes = 3.738 x 10^-6 passwords / hash
+
+Analysis:
+- Did your time per hash computed change between phases? By what factor? Why?
+
+There was very minimal change in the time per hash computed across the three parts. Each had the same order of magnitude (10^-7), and the coefficients were very close:  9.906, 7.867, and 8.522. So the variation can likely be attributed to noise. This outcome would be expected, as the same process of calculating a given hash (from input string to output hex-string digest) was identical. So the amount of time it takes to do so should be pretty much constant.
+
+- Did your time per password crack change between phases? By what factor? Why?
+
+Yes, the time per password crack changed significantly between phases. Part 2 was by far the longest, and then Part 3, followed by Part 1, which was very fast.
+
+     Part 2 was ~193841 times longer than Part 1.
+     Part 2 was ~82.408 times longer than Part 3. 
+     Part 3 was ~2352.2 times longer than Part 1. 
+
+The manner in which the passwords were cracked is what causes this vast variation in time. For Part 1, a dictionary linking each password to its hash was precomputed. The cracking process then only required looping through all of the passwords to crack and looking the hash up in the dictionary to find the password. This scenario is by far the simplest (and correspondingly the fastest).
+
+For Part 2, there were far more possible passwords because they were now two words concatenated together (267516*267516, which is a VERY big number--and would take a very long time and a lot of memory to store all of these hashes should they be precomputed and stored in a dictionary, like they were in Part 1). So, instead, I looped through a subset of these possible passwords (by trying all of the possible words as the first word and then only 5000 (about 2%) of the words as the second word for each first word). For each of these concatenations, I computed the hash and then looked up whether it was in the file of passwords to crack or not. This way, they don't need to be stored--either the hash is present (which means that the password was cracked) or not (which means that no one had that password). There will be no cause to look up that hash again. (The 5000 limit was selected because it cracked >50 passwords and didn't take too much time. Choosing a larger value would crack more passwords--and correspondingly take longer.) The greater number of hashes to compute, and especially the loops to search through the passwords every time for each hash, is what makes Part 2 much longer than Part 1.
+
+For Part 3, the salt adds a different complication. Precomputing an entire dictionary is not going to be particularly efficient here, because then every password would have to be hashed with every possible salt value. Instead, for each password to crack, you can look up the salt, and then produce the corresponding hash dictionary linking the password to its concatentation with the salt. So this means that while Part 1 looped through 267516 passwords once (during the precomputation of the dictionary), Part 3 looped through them 2734 times (the number of passwords to crack). This is reflected directly in how much longer it took to crack all of the passwords (~2734 times longer). (It's nicest to compare Part 1 and Part 3 because they both cracked the same number of passwords (all of them) whereas Part 2 only cracked a small portion of the passwords, meaning that the time is not directly comparable in the same way.) For comparing Part 2 and Part 3, the inner loop of needing to search through all of the passwords to be cracked (which is 2734) each time a new potential hash was calculated (which was 267516 * 5000 times) accounts greatly for the increased time of the former versus the latter. Part 2 just simply has so many more possible passwords possible, meaning so many more hashes to calculate and consider. Both Part 1 and Part 3 are able to calculate the full range of possible hashes, in their two different manners, and then check to see if they are present and thus crackable; Part 2 cannot (in any reasonable amount of time!), which is why it takes so much longer to crack a password (there are far more hashes to calculate, and far lower chances that a hash calculated is actually present among the passwords to crack).
+
+- Suppose you wanted to precompute all the hashes for each possible password so
+you could just look up the password in a table indexed by the hash. How much
+memory would be required for each phase?
+
+Hash string is 32 bytes.
+Password is 16 bytes.
+Mapping of hash to password is 32 bytes.
+
+Part 1:
+(267516 passwords * 16 bytes) + (267516 hashes * 32 bytes) + (267516 mappings * 32 bytes)
+267516(16 + 32 + 32) = 21401280
+
+Part 2:
+(267516 passwords * 267516 passwords [total passwords to store] * 16 bytes * 2 [two passwords concatenated together will take twice the memory to store]) + (267516 passwords * 267516 passwords [total] * 32 bytes [hashes are fixed-length]) + (267516 * 267516 [total] mappings * 32 bytes)
+267516^2(16*2 + 32 + 32) = 6.8702 x 10^12
+
+Part 3:
+
+(2734 possible salt values [one for each password to crack]) * ((267516 passwords * 16 bytes) + (267516 hashes * 32 bytes) + (267516 mappings * 32 bytes))
+2734(267516(16 + 32 + 32)) = 5.8511 x 10^10
+
+[Effectively, for each salt value (as taken from the passwords file), compute Part 1.]
+
+
+
+- Give 3-4 reasons we should store password hashes and not the passwords
+themselves. Think in terms of threats, who the attackers might be, etc.
+
+1. Storing password hashes affords protection from snooping employees. People that have access to files that confidential information (or that potentially could stumble across such files) should not be able to actually view the information in any sort of interpretable way.
+
+2. There is no easy way to "undo" a hash. Finding out what password produces a given hash requires some sort of brute-force method (or the fruits of one, like a precomputed dictionary of the hashes of common passwords). This would help to minimize the risk of exposure for clients in the event of a security breach. (Especially if the passwords are very long and uncommon...but one cannot rely on a client for such things.)
+
+3. Salting the hashes provides further protection, as then far more effort, memory, and time would have to be put into brute-force methods of cracking as the number of possible hashes increases dramatically (every possible password could be salted with (basically) any possible number). This would make attackers try to crack one password at a time (given its salt) rather than all at once. It also makes sure that clients with the same password do not have the same hash value.
+
+4. Should an attacker acquire the database, while the passwords are plaintext, then it would be very easy to post it online (and then have accounts on other sites possibly be compromised as well, should a user use the same username and password on both). This would be very problematic. If the passwords are hashed, then much more work would have to be taken to crack the passwords, and potentially clients with strong passwords would remain protected (the common passwords would probably be broken either way).
+
+5. Storing password hashes dissuades models of password recovery like sending a client their own password (in plaintext) to them! If this occurred over HTTP, that would be very vulnerable, for instance.
+
+
+	    
